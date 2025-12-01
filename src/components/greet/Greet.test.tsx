@@ -7,7 +7,7 @@ test('挨拶が正常にレンダリングされるか？', () => {
   expect(textElement).toBeInTheDocument() 
 })
 
-test('挨拶と名前を一緒にレンダリングする', () => {
+test('test with a name', () => {
   render(<Greet name='Yamachoki'/>)
   const textElement = screen.getByText(/hello Yamachoki/i)
   expect(textElement).toBeInTheDocument() 
