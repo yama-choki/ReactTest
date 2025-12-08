@@ -1,0 +1,26 @@
+{
+  // 保存時に自動フォーマット
+  "editor.formatOnSave": true,
+
+  // 保存時に ESLint の自動修正を実行
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  // デフォルトのフォーマッターを Prettier に指定
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // TypeScript/JavaScript ファイルで Prettier を使う
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

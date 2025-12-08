@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Contact = () => {
   return (
@@ -9,7 +9,10 @@ const Contact = () => {
       <form action="">
         <div>
           <label htmlFor="name">お名前</label>
-          <input type="text" id='name' />
+          <input type="text" id="name" />
+
+          <label htmlFor="email">メールアドレス</label>
+          <input type="text" id="email" />
         </div>
 
         <div>
@@ -23,15 +26,14 @@ const Contact = () => {
         </div>
         <div>
           <label htmlFor="">
-            <input type="checkbox" id='terms'/>
+            <input type="checkbox" id="terms" />
             利用規約に同意します。
           </label>
         </div>
         <button>送信</button>
       </form>
     </>
+  );
+};
 
-  )
-}
-
-export default Contact
+export default Contact;
