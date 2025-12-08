@@ -4,8 +4,15 @@ import Contact from "./Contact";
 describe("Contact", () => {
   test("renders correctly", () => {
     render(<Contact />);
-    const nameElement = screen.getByRole("textbox");
+    const nameElement = screen.getByRole("textbox", {
+      name: "お名前"
+    });
     expect(nameElement).toBeInTheDocument();
+    
+    const emailElement = screen.getByRole("textbox", {
+      name: "メールアドレス"
+    });
+    expect(emailElement).toBeInTheDocument();
 
     const questionsElement = screen.getByRole("combobox");
     expect(questionsElement).toBeInTheDocument();
