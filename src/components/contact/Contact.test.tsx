@@ -12,6 +12,9 @@ describe("Contact", () => {
     const nameElement2 = screen.getByLabelText("お名前")
     expect(nameElement2).toBeInTheDocument()
 
+    const nameElement3 = screen.getByPlaceholderText("フルネーム")
+    expect(nameElement3).toBeInTheDocument()
+
     const emailElement = screen.getByRole("textbox", {
       name: "メールアドレス"
     });

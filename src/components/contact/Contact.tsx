@@ -9,7 +9,7 @@ const Contact = () => {
       <form action="">
         <div>
           <label htmlFor="name">お名前</label>
-          <input type="text" id="name" />
+          <input type="text" id="name" placeholder="フルネーム" />
 
           <label htmlFor="email">メールアドレス</label>
           <input type="text" id="email" />
