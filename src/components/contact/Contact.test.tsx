@@ -4,6 +4,13 @@ import Contact from "./Contact";
 describe("Contact", () => {
   test("renders correctly", () => {
     render(<Contact />);
+
+    const h1Text = screen.getByRole("heading");
+    expect(h1Text).toBeInTheDocument();
+
+    const paragraphText = screen.getByText("全てのフィールドは必須項目です。");
+    expect(paragraphText).toBeInTheDocument();
+
     const nameElement = screen.getByRole("textbox", {
       name: "お名前"
     });
