@@ -5,7 +5,9 @@ describe("Contact", () => {
   test("renders correctly", () => {
     render(<Contact />);
 
-    const h1Text = screen.getByRole("heading");
+    const h1Text = screen.getByRole("heading", {
+      name: 'お問い合わせフォーム'
+    });
     expect(h1Text).toBeInTheDocument();
 
     const paragraphText = screen.getByText("全てのフィールドは必須項目です。");
